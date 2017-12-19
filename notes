@@ -1,0 +1,7 @@
+PROCESSES
+- includes open files, signal handlers (?)
+- each process has a pid, ppid (parent process id) and pgid (process group id)
+- when a parent process dies before the child, the process gets adopted by init
+        so it has a ppid of 1
+        exception for machines using systemd: instead, it's ppid 2, kthread
+
